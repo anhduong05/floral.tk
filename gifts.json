@@ -1,0 +1,139 @@
+{
+    "gifts": [
+        {
+            "name": "Mini Blooming Giftbox",
+            "price": 50,
+            "promo_code": "MIDAY22",
+            "image": "picture1_1.jpg",
+            "image_hover": "picture1_2.jpg",
+            "link": "#",
+            "added_time": "2022-01-01 16:20:20"
+        },
+        {
+            "name": "I Lova you Series (coral & pink)",
+            "price": 210,
+            "promo_code": "MIDAY22",
+            "image": "picture2_1.jpg",
+            "image_hover": "picture2_2.jpg",
+            "link": "#",
+            "added_time": "2022-01-02 16:21:20"
+        },
+        {
+            "name": "I Love You Series (red)",
+            "price": 210,
+            "promo_code": "MIDAY22",
+            "image": "picture3_1.jpg",
+            "image_hover": "picture3_2.jpg",
+            "link": "#",
+            "added_time": "2022-01-03 16:21:20"
+        },
+        {
+            "name": "I Love U Series(pink & yellow)",
+            "price": 210,
+            "promo_code": "MIDAY22",
+            "image": "picture4_1.jpg",
+            "image_hover": "picture4_2.jpg",
+            "link": "#",
+            "added_time": "2022-01-04 16:21:20"
+        },
+        {
+            "name": "Customize Initial Gift Box",
+            "price": 100,
+            "promo_code": "MIDAY22",
+            "image": "picture5_1.jpg",
+            "image_hover": "picture5_2.jpg",
+            "link": "#",
+            "added_time": "2022-01-05 16:21:20"
+        },
+        {
+            "name": "True love",
+            "price": 160,
+            "promo_code": "MIDAY22",
+            "image": "picture6_1.jpg",
+            "image_hover": "picture6_2.jpg",
+            "link": "#",
+            "added_time": "2022-01-06 16:21:20"
+        },
+        {
+            "name": "Rainbow Rose Giftbox",
+            "price": 56,
+            "promo_code": "MIDAY22",
+            "image": "picture7_2.jpg",
+            "image_hover": "picture7_1.jpg",
+            "link": "#",
+            "added_time": "2022-02-01 16:21:20"
+        },
+        {
+            "name": "Fairytale",
+            "price": 138,
+            "promo_code": "MIDAY22",
+            "image": "picture8_1.jpg",
+            "image_hover": "picture8_2.jpg",
+            "link": "#",
+            "added_time": "2022-02-01 16:21:20"
+        },
+        {
+            "name": "True Love Big Size Giftbox",
+            "price": 230,
+            "promo_code": "MIDAY22",
+            "image": "picture9_1.jpg",
+            "image_hover": "picture9_2.jpg",
+            "link": "#",
+            "added_time": "2022-03-01 16:21:20"
+        },
+        {
+            "name": "Mini Orchid Soap Flower Giftbox",
+            "price": 68,
+            "promo_code": "MIDAY22",
+            "image": "picture10_1.jpg",
+            "image_hover": "picture10_2.jpg",
+            "link": "#",
+            "added_time": "2022-04-01 16:21:20"
+        },
+        {
+            "name": "Classy Soap Flower Giftbox",
+            "price": 148,
+            "promo_code": "MIDAY22",
+            "image": "picture11_1.jpg",
+            "image_hover": "picture11_2.jpg",
+            "link": "#",
+            "added_time": "2022-05-05 16:21:20"
+        },
+        {
+            "name": "Heartshape Babybreath",
+            "price": 150,
+            "promo_code": "MIDAY22",
+            "image": "picture12_2.jpg",
+            "image_hover": "picture12_1.jpg",
+            "link": "#",
+            "added_time": "2022-02-03 16:21:20"
+        },
+        {
+            "name": "Mini Blooming Money Bouquet Giftbox",
+            "price": 120,
+            "promo_code": "MIDAY22",
+            "image": "picture13_1.jpg",
+            "image_hover": "picture13_2.jpg",
+            "link": "#",
+            "added_time": "2022-01-04 16:21:20"
+        },
+        {
+            "name": "Customized Wine",
+            "price": 160,
+            "promo_code": "MIDAY22",
+            "image": "picture14_1.jpg",
+            "image_hover": "picture14_2.jpg",
+            "link": "#",
+            "added_time": "2022-04-04 16:21:20"
+        },
+        {
+            "name": "Heart For You",
+            "price": 186,
+            "promo_code": "MIDAY22",
+            "image": "picture15_1.jpg",
+            "image_hover": "picture15_2.jpg",
+            "link": "#",
+            "added_time": "2022-06-04 16:21:20"
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gift box</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="onDocumentLoaded()">
+    <h1>Gift Box</h1>
+
+    <p>Choose from our range of special soap flower gift boxes</p>
+
+    <span class="sortby">
+        <h3>Sort by:
+            <select style="width:200px;" onchange="sortGifts()" id="sortGiftBy">
+                <option value="normal" selected="selected">We recommend</option>
+                <option value="addedTimeDesc">Newest arrivals</option>
+                <option value="priceAsc">Price: Low to High</option>
+                <option value="priceDesc">Price: High to Low</option>
+                <option value="nameACS">Name: A to Z</option>
+                <option value="nameDesc">Name: Z to A</option>
+            </select>
+        </h3>
+    </span>
+    <div class="row" id="listGiftBox">
+
+    </div>
+    <script>
+        var gifts = [];
+        async function onDocumentLoaded() {
+            await loadGifts();
+            presentGift();
+        }
+        async function loadGifts() {
+            const response = await fetch("gifts.json");
+            var jResponse = await response.json();
+            gifts = jResponse.gifts;
+            //gifts.sort((a, b) => a.name < b.name ? -1 : 1);
+        }
+        function sortGifts(type, direction) {
+            var sortValue = document.getElementById("sortGiftBy").value;
+
+            switch (sortValue) {
+
+                case "addedTimeDesc":
+                    gifts.sort((a, b) => a.added_time > b.added_time ? -1 : 1);
+                    break;
+                case "priceAsc":
+                    gifts.sort((a, b) => a.price - b.price);
+                    break;
+                case "priceDesc":
+                    gifts.sort((a, b) => b.price - a.price);
+                    break;
+                case "nameACS":
+                    gifts.sort((a, b) => a.name < b.name ? -1 : 1);
+                    break;
+                case "nameDesc":
+                    gifts.sort((a, b) => a.name > b.name ? -1 : 1);
+                    break;
+                case "normal":
+                default:
+                    gifts.sort((a, b) => a.name < b.name ? -1 : 1);
+                    break;
+            }
+            presentGift();
+        }
+        function presentGift() {
+            var listGiftBox = document.getElementById("listGiftBox");
+            listGiftBox.innerHTML = '';
+            for (var i = 0; i < gifts.length; i++) {
+                var oneGiftBox = buildOneGift(gifts[i]);
+                //var oneGiftBoxElement = document.createElement(oneGiftBox);
+                listGiftBox.appendChild(oneGiftBox);
+            }
+        }
+        function buildOneGift(gift) {
+            var div = document.createElement("div");
+            div.className = "gift-col gift-item";
+            div.innerHTML = `
+        <div class="gift-item-wrapper">
+            <div class="header">
+                <div class="img-row">
+                    <a href="#" class="nav-div-img-row">
+                        <h1 class="text">${gift.promo_code}</h1>
+                        <img onmouseover="this.src='img/${gift.image_hover}'"
+                            onmouseout="this.src='img/${gift.image}'" src="img/${gift.image}"
+                            alt="" style="width: auto; height: 300px; min-width:300px;" />
+                    </a>
+                </div>
+            </div>
+            <div class="name"> ${gift.name} </div> <br>
+            <div class="test"> $${gift.price.toFixed(2)}</div>
+            <div class="button2">
+                <a href="${gift.link}"><input class="button" type="submit" value="Boy Now"></a>
+            </div>
+        </div>    
+            `;
+
+            return div;
+        }
+
+    </script>
+</body>
+
+
+
+
+</html>
